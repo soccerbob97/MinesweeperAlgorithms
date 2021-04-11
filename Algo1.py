@@ -1,4 +1,5 @@
 import json
+import numpy as np
 
 initial = json.loads(open('test_board.json').read())
 
@@ -9,23 +10,10 @@ numBombs = initial["bombs"]
 safeSquare = initial["safe"]
 answerArray = initial["board"]
 
-visibleBoard = [[-1]*height]*width
-answerBoard = [[-1]*height]*width
+visibleBoard =  np.empty(shape=(height,width))
+visibleBoard.fill(-1)
+visibleBoard = visibleBoard.astype(int)
 
-for index in range(height*width):
-    answerBoard[index%height][int(index/height)] = answerArray[index]
+finalBoard = [[int(answerArray[i*width + j]) for i in range(height)] for j in range(width)]
+answerArray = np.array(finalBoard)
 
-# print(answerArray)
-# for i in range (height):
-#     for j in range (width):
-#         # print("i " + i)
-#         # print("j " + j)
-#         #print((i * width) + j)
-#         # print(answerArray[(i * width) + j])
-#         # val = answerArray[(i * width) + j]
-#         # print(val)
-#         # answerBoard[i][j] = val
-#         # print (answerBoard)
-#         answerBoard[i][j] = answerArray[(i * height) + j]
-
-print(answerBoard)
