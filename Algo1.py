@@ -44,14 +44,14 @@ stats_total = 0
 stats_mined = 0
 stats_bombs = 0
 stats_boards = 0
-path = '/Users/armaanlala/Developer/Minesweeper-Algorithms/varied_density_boards'
+path = '/Users/armaanlala/Developer/Minesweeper-Algorithms/varied_size_boards'
 
 for filename in os.listdir(path):
     
     if filename.endswith(".json"): 
         start = time.time()
 
-        initial = json.loads(open("varied_density_boards/" + filename).read())
+        initial = json.loads(open("varied_size_boards/" + filename).read())
 
         
         
@@ -109,7 +109,7 @@ for filename in os.listdir(path):
         
         print('runtime vs bombDensity: '  + str(float(runtime/100.0)) + ' seconds vs ' + str(float(numBombs)/ (height*width)) + ' bombs/square' )
 
-        print('performance vs gridArea: '  + str(mined) + ' bombs vs ' + str(height*width) + ' bombs/square' )
+        print('performance vs gridArea: '  + str(mined) + ' bombs vs ' + str(height*width) + ' squares' )
         
         print('performance vs bombDensity: '  + str(mined) + ' bombs vs ' + str(float(numBombs)/ (height*width)) + ' bombs/square' )
         
