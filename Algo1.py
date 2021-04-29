@@ -9,14 +9,14 @@ stats_total = 0
 stats_mined = 0
 stats_bombs = 0
 stats_boards = 0
-path = '/Users/armaanlala/Developer/Minesweeper-Algorithms/varied_density_boards'
+path = '/Users/armaanlala/Developer/Minesweeper-Algorithms/varied_size_boards'
 
 for filename in os.listdir(path):
     
     if filename.endswith(".json"): 
 
 # initial = json.loads(open('deterministic_board.json').read())
-        initial = json.loads(open("varied_density_boards/" + filename).read())
+        initial = json.loads(open("varied_size_boards/" + filename).read())
         
 
         height,width = initial["dim"].split(",")
@@ -73,7 +73,7 @@ for filename in os.listdir(path):
                 for j in range(-1,2):
                     if (x+i,y+j) not in coords and not (x + i < 0 or y + j < 0 or x + i >= height or y + j>= width):
                         if visibleBoard[x,y] == 0:
-                            probabilityBoard[x + i, y + j] = -1
+                            probabilityBoard[x + i, y + j] = -100
                         elif not visibleBoard[x,y] == 9:
                             probabilityBoard[x + i, y + j] += visibleBoard[x,y]
                         elif visibleBoard[x,y] == 9:
