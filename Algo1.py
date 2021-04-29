@@ -15,7 +15,6 @@ for filename in os.listdir(path):
     
     if filename.endswith(".json"): 
 
-# initial = json.loads(open('deterministic_board.json').read())
         initial = json.loads(open("varied_size_boards/" + filename).read())
         
 
@@ -25,7 +24,6 @@ for filename in os.listdir(path):
         maxNumBombs = initial["bombs"]
         safeSquare = initial["safe"]
         answerArray = initial["board"]
-        # print(safeSquare)
 
         visibleBoard =  np.empty(shape=(height,width))
         probabilityBoard =  np.empty(shape=(height,width))
@@ -101,18 +99,12 @@ for filename in os.listdir(path):
 
             visitSquare(minCoord[0],minCoord[1])
             mined += 1
-            # print(str(numBombs) + ' ' + str(maxNumBombs))
-        # print(probabilityBoard)
-        # print(visibleBoard)
-        # print(mined)
-        # print(numBombs + ' ' + maxNumBombs)
+
         print(str(numBombs) + ' bombs. Mined ' + str(mined) + ' out of ' + str(height*width))
-        # print(maxNumBombs)
         stats_total += height*width 
         stats_mined += mined
         stats_bombs += numBombs
         stats_boards += 1
 
-# print(stats_to)
 avg_mined = float(stats_mined)/stats_total
 print("Final stats: %d bombs found, %f percent mined on average across %d boards"  % (stats_bombs,avg_mined,stats_boards))
