@@ -9,14 +9,14 @@ stats_total = 0
 stats_mined = 0
 stats_bombs = 0
 stats_boards = 0
-path = '/Users/armaanlala/Developer/Minesweeper-Algorithms/standard_boards/varied_density'
+path = '/Users/armaanlala/Developer/Minesweeper-Algorithms/varied_density_boards'
 
 for filename in os.listdir(path):
     
     if filename.endswith(".json"): 
 
 # initial = json.loads(open('deterministic_board.json').read())
-        initial = json.loads(open("standard_boards/varied_density/" + filename).read())
+        initial = json.loads(open("varied_density_boards/" + filename).read())
         
 
         height,width = initial["dim"].split(",")
@@ -52,11 +52,11 @@ for filename in os.listdir(path):
 
         def visitSquare(x: int,  y: int):
             
-            if (x < 0 or y < 0 or x >= width or y>= height):
+            if (x < 0 or y < 0 or x >= height or y>= width):
                 return
             if visibleBoard[x][y] == -1:
                 coords.append((x,y))
-                visibleBoard[x,y]  = int(answerArray[y*width + x])
+                visibleBoard[x,y]  = int(answerArray[x*width + y])
 
                 probabilityBoard[x,y] = -9
                 updateProbability(x,y)
@@ -71,7 +71,7 @@ for filename in os.listdir(path):
             
             for i in range(-1,2):
                 for j in range(-1,2):
-                    if (x+i,y+j) not in coords and not (x + i < 0 or y + j < 0 or x + i >= width or y + j>= height):
+                    if (x+i,y+j) not in coords and not (x + i < 0 or y + j < 0 or x + i >= height or y + j>= width):
                         if visibleBoard[x,y] == 0:
                             probabilityBoard[x + i, y + j] = -1
                         elif not visibleBoard[x,y] == 9:
