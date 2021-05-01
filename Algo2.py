@@ -45,7 +45,7 @@ for filename in os.listdir(path):
         answerArray = initial["board"]
         mined = 0
         numBombs = 0
-
+        print (str(height) + ' x ' + str(width) + ' with ' + maxNumBombs +' bombs')
         for i in range (5):
             start = time.time()
 
