@@ -6,7 +6,7 @@ import os
 import time
 import glob
 
-
+print (__file__)
 def visitSquare(row: int,  col: int):
     if (row < 0 or col < 0 or row >= height or col>= width):
         return
@@ -46,8 +46,8 @@ stats_mined = 0
 stats_bombs = 0
 stats_boards = 0
 
-
-for filename in glob.glob('./**/**'):
+path = os.path.dirname(os.path.abspath(__file__))
+for filename in glob.glob(path + '/**/**'):
     
     if filename.endswith(".json"): 
         start = time.time()

@@ -27,8 +27,8 @@ stats_mined = 0
 stats_bombs = 0
 stats_boards = 0
 
-
-for filename in glob.glob('./**/**'):
+path = os.path.dirname(os.path.abspath(__file__))
+for filename in glob.glob(path + '/**/**'):
     
     if filename.endswith(".json"): 
         start = time.time()
