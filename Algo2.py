@@ -26,12 +26,11 @@ stats_total = 0
 stats_mined = 0
 stats_bombs = 0
 stats_boards = 0
-path = '/Users/armaanlala/Developer/Minesweeper-Algorithms/varied_size_boards'
+
 
 for filename in glob.glob('./**/**'):
     
     if filename.endswith(".json"): 
-        print(filename)
         start = time.time()
 
         initial = json.loads(open(filename).read())
@@ -58,8 +57,8 @@ for filename in glob.glob('./**/**'):
         mined = 0
         numBombs = 0
 
-
-
+        print(filename)
+        print (str(height) + ' x ' + str(width) + ' with ' + maxNumBombs +' bombs')
 
         visitSquare(int(safeSquare.split(",")[0]), int(safeSquare.split(",")[1]))
 
@@ -155,13 +154,10 @@ for filename in glob.glob('./**/**'):
         runtime = int((time.time() - start) * 10000)
 
 
-        print('runtime vs gridArea: '  + str(float(runtime/100.0)) + ' seconds vs ' + str(height*width) + ' squares' )
-        
-        print('runtime vs bombDensity: '  + str(float(runtime/100.0)) + ' seconds vs ' + str(float(numBombs)/ (height*width)) + ' bombs/square' )
-
-        print('performance vs gridArea: '  + str(mined) + ' squares vs ' + str(height*width) + ' squares' )
-        
-        print('performance vs bombDensity: '  + str(mined) + ' squares vs ' + str(float(numBombs)/ (height*width)) + ' bombs/square' )
+        print('Grid Area: ' + str(height*width) + ' squares' )
+        print('Bomb Density: '  + str(float(numBombs)/ (height*width)) + ' bombs/square' )
+        print('Runtime: '  + str(float(runtime/100.0)) + ' seconds')
+        print('Performance: '  + str(mined/float(height*width)) + ' percent of squares uncovered' )
         
         stats_total += height*width 
         stats_mined += mined

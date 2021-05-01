@@ -1,0 +1,401 @@
+20 x 35 with 70 bombs
+runtime vs gridArea: 0.21 seconds vs 700 squares
+runtime vs bombDensity: 0.21 seconds vs 0.1 bombs/square
+performance vs gridArea: 351.6 squares vs 700 squares
+performance vs bombDensity: 351.6 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 20 with 40 bombs
+runtime vs gridArea: 0.12 seconds vs 400 squares
+runtime vs bombDensity: 0.12 seconds vs 0.1 bombs/square
+performance vs gridArea: 179.2 squares vs 400 squares
+performance vs bombDensity: 179.2 squares vs 0.1 bombs/square
+ 
+ 
+ 
+15 x 20 with 30 bombs
+runtime vs gridArea: 0.08 seconds vs 300 squares
+runtime vs bombDensity: 0.08 seconds vs 0.1 bombs/square
+performance vs gridArea: 135.8 squares vs 300 squares
+performance vs bombDensity: 135.8 squares vs 0.1 bombs/square
+ 
+ 
+ 
+10 x 20 with 20 bombs
+runtime vs gridArea: 0.08 seconds vs 200 squares
+runtime vs bombDensity: 0.08 seconds vs 0.1 bombs/square
+performance vs gridArea: 121.6 squares vs 200 squares
+performance vs bombDensity: 121.6 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 25 with 50 bombs
+runtime vs gridArea: 0.19 seconds vs 500 squares
+runtime vs bombDensity: 0.19 seconds vs 0.1 bombs/square
+performance vs gridArea: 253.6 squares vs 500 squares
+performance vs bombDensity: 253.6 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 30 with 60 bombs
+runtime vs gridArea: 0.18 seconds vs 600 squares
+runtime vs bombDensity: 0.18 seconds vs 0.1 bombs/square
+performance vs gridArea: 300.8 squares vs 600 squares
+performance vs bombDensity: 300.8 squares vs 0.1 bombs/square
+ 
+ 
+ 
+30 x 30 with 90 bombs
+runtime vs gridArea: 0.23 seconds vs 900 squares
+runtime vs bombDensity: 0.23 seconds vs 0.1 bombs/square
+performance vs gridArea: 462.2 squares vs 900 squares
+performance vs bombDensity: 462.2 squares vs 0.1 bombs/square
+ 
+ 
+ 
+25 x 32 with 80 bombs
+runtime vs gridArea: 0.33 seconds vs 800 squares
+runtime vs bombDensity: 0.33 seconds vs 0.1 bombs/square
+performance vs gridArea: 418.0 squares vs 800 squares
+performance vs bombDensity: 418.0 squares vs 0.1 bombs/square
+ 
+ 
+ 
+25 x 32 with 80 bombs
+runtime vs gridArea: 0.31 seconds vs 800 squares
+runtime vs bombDensity: 0.31 seconds vs 0.1 bombs/square
+performance vs gridArea: 417.0 squares vs 800 squares
+performance vs bombDensity: 417.0 squares vs 0.1 bombs/square
+ 
+ 
+ 
+30 x 30 with 90 bombs
+runtime vs gridArea: 0.23 seconds vs 900 squares
+runtime vs bombDensity: 0.23 seconds vs 0.1 bombs/square
+performance vs gridArea: 457.2 squares vs 900 squares
+performance vs bombDensity: 457.2 squares vs 0.1 bombs/square
+ 
+ 
+ 
+10 x 20 with 20 bombs
+runtime vs gridArea: 0.06 seconds vs 200 squares
+runtime vs bombDensity: 0.06 seconds vs 0.1 bombs/square
+performance vs gridArea: 98.2 squares vs 200 squares
+performance vs bombDensity: 98.2 squares vs 0.1 bombs/square
+ 
+ 
+ 
+15 x 20 with 30 bombs
+runtime vs gridArea: 0.07 seconds vs 300 squares
+runtime vs bombDensity: 0.07 seconds vs 0.1 bombs/square
+performance vs gridArea: 147.4 squares vs 300 squares
+performance vs bombDensity: 147.4 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 35 with 70 bombs
+runtime vs gridArea: 0.19 seconds vs 700 squares
+runtime vs bombDensity: 0.19 seconds vs 0.1 bombs/square
+performance vs gridArea: 332.2 squares vs 700 squares
+performance vs bombDensity: 332.2 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 20 with 40 bombs
+runtime vs gridArea: 0.12 seconds vs 400 squares
+runtime vs bombDensity: 0.12 seconds vs 0.1 bombs/square
+performance vs gridArea: 206.8 squares vs 400 squares
+performance vs bombDensity: 206.8 squares vs 0.1 bombs/square
+ 
+ 
+ 
+10 x 10 with 10 bombs
+runtime vs gridArea: 0.04 seconds vs 100 squares
+runtime vs bombDensity: 0.04 seconds vs 0.1 bombs/square
+performance vs gridArea: 48.6 squares vs 100 squares
+performance vs bombDensity: 48.6 squares vs 0.1 bombs/square
+ 
+ 
+ 
+25 x 40 with 100 bombs
+runtime vs gridArea: 0.31 seconds vs 1000 squares
+runtime vs bombDensity: 0.31 seconds vs 0.1 bombs/square
+performance vs gridArea: 496.2 squares vs 1000 squares
+performance vs bombDensity: 496.2 squares vs 0.1 bombs/square
+ 
+ 
+ 
+10 x 20 with 20 bombs
+runtime vs gridArea: 0.08 seconds vs 200 squares
+runtime vs bombDensity: 0.08 seconds vs 0.1 bombs/square
+performance vs gridArea: 99.4 squares vs 200 squares
+performance vs bombDensity: 99.4 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 25 with 50 bombs
+runtime vs gridArea: 0.18 seconds vs 500 squares
+runtime vs bombDensity: 0.18 seconds vs 0.1 bombs/square
+performance vs gridArea: 257.4 squares vs 500 squares
+performance vs bombDensity: 257.4 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 30 with 60 bombs
+runtime vs gridArea: 0.21 seconds vs 600 squares
+runtime vs bombDensity: 0.21 seconds vs 0.1 bombs/square
+performance vs gridArea: 275.2 squares vs 600 squares
+performance vs bombDensity: 275.2 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 25 with 50 bombs
+runtime vs gridArea: 0.17 seconds vs 500 squares
+runtime vs bombDensity: 0.17 seconds vs 0.1 bombs/square
+performance vs gridArea: 232.0 squares vs 500 squares
+performance vs bombDensity: 232.0 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 30 with 60 bombs
+runtime vs gridArea: 0.19 seconds vs 600 squares
+runtime vs bombDensity: 0.19 seconds vs 0.1 bombs/square
+performance vs gridArea: 279.2 squares vs 600 squares
+performance vs bombDensity: 279.2 squares vs 0.1 bombs/square
+ 
+ 
+ 
+25 x 40 with 100 bombs
+runtime vs gridArea: 0.4 seconds vs 1000 squares
+runtime vs bombDensity: 0.4 seconds vs 0.1 bombs/square
+performance vs gridArea: 505.2 squares vs 1000 squares
+performance vs bombDensity: 505.2 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 35 with 70 bombs
+runtime vs gridArea: 0.21 seconds vs 700 squares
+runtime vs bombDensity: 0.21 seconds vs 0.1 bombs/square
+performance vs gridArea: 321.0 squares vs 700 squares
+performance vs bombDensity: 321.0 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 20 with 40 bombs
+runtime vs gridArea: 0.13 seconds vs 400 squares
+runtime vs bombDensity: 0.13 seconds vs 0.1 bombs/square
+performance vs gridArea: 188.4 squares vs 400 squares
+performance vs bombDensity: 188.4 squares vs 0.1 bombs/square
+ 
+ 
+ 
+10 x 10 with 10 bombs
+runtime vs gridArea: 0.04 seconds vs 100 squares
+runtime vs bombDensity: 0.04 seconds vs 0.1 bombs/square
+performance vs gridArea: 57.0 squares vs 100 squares
+performance vs bombDensity: 57.0 squares vs 0.1 bombs/square
+ 
+ 
+ 
+30 x 30 with 90 bombs
+runtime vs gridArea: 0.3 seconds vs 900 squares
+runtime vs bombDensity: 0.3 seconds vs 0.1 bombs/square
+performance vs gridArea: 448.8 squares vs 900 squares
+performance vs bombDensity: 448.8 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 30 with 60 bombs
+runtime vs gridArea: 0.19 seconds vs 600 squares
+runtime vs bombDensity: 0.19 seconds vs 0.1 bombs/square
+performance vs gridArea: 293.0 squares vs 600 squares
+performance vs bombDensity: 293.0 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 25 with 50 bombs
+runtime vs gridArea: 0.18 seconds vs 500 squares
+runtime vs bombDensity: 0.18 seconds vs 0.1 bombs/square
+performance vs gridArea: 243.2 squares vs 500 squares
+performance vs bombDensity: 243.2 squares vs 0.1 bombs/square
+ 
+ 
+ 
+25 x 40 with 100 bombs
+runtime vs gridArea: 0.37 seconds vs 1000 squares
+runtime vs bombDensity: 0.37 seconds vs 0.1 bombs/square
+performance vs gridArea: 499.2 squares vs 1000 squares
+performance vs bombDensity: 499.2 squares vs 0.1 bombs/square
+ 
+ 
+ 
+15 x 20 with 30 bombs
+runtime vs gridArea: 0.08 seconds vs 300 squares
+runtime vs bombDensity: 0.08 seconds vs 0.1 bombs/square
+performance vs gridArea: 138.0 squares vs 300 squares
+performance vs bombDensity: 138.0 squares vs 0.1 bombs/square
+ 
+ 
+ 
+10 x 10 with 10 bombs
+runtime vs gridArea: 0.03 seconds vs 100 squares
+runtime vs bombDensity: 0.03 seconds vs 0.1 bombs/square
+performance vs gridArea: 46.0 squares vs 100 squares
+performance vs bombDensity: 46.0 squares vs 0.1 bombs/square
+ 
+ 
+ 
+10 x 10 with 10 bombs
+runtime vs gridArea: 0.04 seconds vs 100 squares
+runtime vs bombDensity: 0.04 seconds vs 0.1 bombs/square
+performance vs gridArea: 56.0 squares vs 100 squares
+performance vs bombDensity: 56.0 squares vs 0.1 bombs/square
+ 
+ 
+ 
+25 x 40 with 100 bombs
+runtime vs gridArea: 0.29 seconds vs 1000 squares
+runtime vs bombDensity: 0.29 seconds vs 0.1 bombs/square
+performance vs gridArea: 537.4 squares vs 1000 squares
+performance vs bombDensity: 537.4 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 30 with 60 bombs
+runtime vs gridArea: 0.18 seconds vs 600 squares
+runtime vs bombDensity: 0.18 seconds vs 0.1 bombs/square
+performance vs gridArea: 307.2 squares vs 600 squares
+performance vs bombDensity: 307.2 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 25 with 50 bombs
+runtime vs gridArea: 0.17 seconds vs 500 squares
+runtime vs bombDensity: 0.17 seconds vs 0.1 bombs/square
+performance vs gridArea: 264.8 squares vs 500 squares
+performance vs bombDensity: 264.8 squares vs 0.1 bombs/square
+ 
+ 
+ 
+25 x 32 with 80 bombs
+runtime vs gridArea: 0.27 seconds vs 800 squares
+runtime vs bombDensity: 0.27 seconds vs 0.1 bombs/square
+performance vs gridArea: 394.4 squares vs 800 squares
+performance vs bombDensity: 394.4 squares vs 0.1 bombs/square
+ 
+ 
+ 
+10 x 20 with 20 bombs
+runtime vs gridArea: 0.07 seconds vs 200 squares
+runtime vs bombDensity: 0.07 seconds vs 0.1 bombs/square
+performance vs gridArea: 110.4 squares vs 200 squares
+performance vs bombDensity: 110.4 squares vs 0.1 bombs/square
+ 
+ 
+ 
+15 x 20 with 30 bombs
+runtime vs gridArea: 0.07 seconds vs 300 squares
+runtime vs bombDensity: 0.07 seconds vs 0.1 bombs/square
+performance vs gridArea: 153.4 squares vs 300 squares
+performance vs bombDensity: 153.4 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 20 with 40 bombs
+runtime vs gridArea: 0.1 seconds vs 400 squares
+runtime vs bombDensity: 0.1 seconds vs 0.1 bombs/square
+performance vs gridArea: 195.0 squares vs 400 squares
+performance vs bombDensity: 195.0 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 35 with 70 bombs
+runtime vs gridArea: 0.18 seconds vs 700 squares
+runtime vs bombDensity: 0.18 seconds vs 0.1 bombs/square
+performance vs gridArea: 371.4 squares vs 700 squares
+performance vs bombDensity: 371.4 squares vs 0.1 bombs/square
+ 
+ 
+ 
+25 x 32 with 80 bombs
+runtime vs gridArea: 0.28 seconds vs 800 squares
+runtime vs bombDensity: 0.28 seconds vs 0.1 bombs/square
+performance vs gridArea: 395.6 squares vs 800 squares
+performance vs bombDensity: 395.6 squares vs 0.1 bombs/square
+ 
+ 
+ 
+30 x 30 with 90 bombs
+runtime vs gridArea: 0.28 seconds vs 900 squares
+runtime vs bombDensity: 0.28 seconds vs 0.1 bombs/square
+performance vs gridArea: 477.0 squares vs 900 squares
+performance vs bombDensity: 477.0 squares vs 0.1 bombs/square
+ 
+ 
+ 
+30 x 30 with 90 bombs
+runtime vs gridArea: 0.28 seconds vs 900 squares
+runtime vs bombDensity: 0.28 seconds vs 0.1 bombs/square
+performance vs gridArea: 438.4 squares vs 900 squares
+performance vs bombDensity: 438.4 squares vs 0.1 bombs/square
+ 
+ 
+ 
+25 x 32 with 80 bombs
+runtime vs gridArea: 0.25 seconds vs 800 squares
+runtime vs bombDensity: 0.25 seconds vs 0.1 bombs/square
+performance vs gridArea: 386.6 squares vs 800 squares
+performance vs bombDensity: 386.6 squares vs 0.1 bombs/square
+ 
+ 
+ 
+10 x 10 with 10 bombs
+runtime vs gridArea: 0.05 seconds vs 100 squares
+runtime vs bombDensity: 0.05 seconds vs 0.1 bombs/square
+performance vs gridArea: 66.0 squares vs 100 squares
+performance vs bombDensity: 66.0 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 20 with 40 bombs
+runtime vs gridArea: 0.13 seconds vs 400 squares
+runtime vs bombDensity: 0.13 seconds vs 0.1 bombs/square
+performance vs gridArea: 190.4 squares vs 400 squares
+performance vs bombDensity: 190.4 squares vs 0.1 bombs/square
+ 
+ 
+ 
+20 x 35 with 70 bombs
+runtime vs gridArea: 0.22 seconds vs 700 squares
+runtime vs bombDensity: 0.22 seconds vs 0.1 bombs/square
+performance vs gridArea: 343.0 squares vs 700 squares
+performance vs bombDensity: 343.0 squares vs 0.1 bombs/square
+ 
+ 
+ 
+15 x 20 with 30 bombs
+runtime vs gridArea: 0.11 seconds vs 300 squares
+runtime vs bombDensity: 0.11 seconds vs 0.1 bombs/square
+performance vs gridArea: 135.6 squares vs 300 squares
+performance vs bombDensity: 135.6 squares vs 0.1 bombs/square
+ 
+ 
+ 
+25 x 40 with 100 bombs
+runtime vs gridArea: 0.4 seconds vs 1000 squares
+runtime vs bombDensity: 0.4 seconds vs 0.1 bombs/square
+performance vs gridArea: 538.8 squares vs 1000 squares
+performance vs bombDensity: 538.8 squares vs 0.1 bombs/square
+ 
+ 
+ 
+10 x 20 with 20 bombs
+runtime vs gridArea: 0.08 seconds vs 200 squares
+runtime vs bombDensity: 0.08 seconds vs 0.1 bombs/square
+performance vs gridArea: 100.6 squares vs 200 squares
+performance vs bombDensity: 100.6 squares vs 0.1 bombs/square
+ 
+ 
+ 
+Final stats: 2750 bombs found, 0.500778 percent mined on average across 50 boards
