@@ -25,6 +25,7 @@ stats_total = 0
 stats_mined = 0
 stats_bombs = 0
 stats_boards = 0
+
 path = '/Users/armaanlala/Developer/Minesweeper-Algorithms/varied_size_boards'
 
 for filename in os.listdir(path):
@@ -42,116 +43,122 @@ for filename in os.listdir(path):
         maxNumBombs = initial["bombs"]
         safeSquare = initial["safe"]
         answerArray = initial["board"]
-
-        # Initialize the board visible to the computer
-        visibleBoard = np.empty(shape=(height, width))
-        probabilityBoard = np.empty(shape=(height, width))
-        visibleBoard.fill(-1)
-        visibleBoard = visibleBoard.astype(int)
-
-        finalBoard = [[int(answerArray[row*width + col])
-                    for col in range(width)] for row in range(height)]
-        answerKey = np.array(finalBoard)
-
         mined = 0
         numBombs = 0
 
+        for i in range (5):
+            start = time.time()
 
+            # Initialize the board visible to the computer
+            visibleBoard = np.empty(shape=(height, width))
+            probabilityBoard = np.empty(shape=(height, width))
+            visibleBoard.fill(-1)
+            visibleBoard = visibleBoard.astype(int)
 
+            finalBoard = [[int(answerArray[row*width + col])
+                        for col in range(width)] for row in range(height)]
+            answerKey = np.array(finalBoard)
 
-        visitSquare(int(safeSquare.split(",")[0]), int(safeSquare.split(",")[1]))
-
-        for row in range(1, height, 3):
-            for col in range(1, width, 3):
-                visitSquare(row, col)
-                bombsInArea = 0
-
-                # Get list of adjacent 8 squares
-                coords = [(row + i, col + j)
-                        for i in range(-1, 2) for j in range(-1, 2)]
-                # print(coords)
-
-                # While not all bombs in our sector have been uncovered
-                # randomly choosean adjacent square until we have the right number of bombs
-                while (bombsInArea != visibleBoard[row, col] and visibleBoard[row][col] != 9):
-                    random.shuffle(coords)
-                    visit = coords.pop()
-                    if (inBounds(visit[0],visit[1])):
-                        visitSquare(visit[0], visit[1])
-                        if (visibleBoard[visit[0]][visit[1]] == 9):
-                            bombsInArea += 1
-
-                # If the middle square is a bomb, we must unfortunately mine out all
-                # adjacent 8 squares as we do not know enough data
-                if (visibleBoard[row][col] == 9):
-                    for i in range(-1, 2):
-                        for j in range(-1, 2):
-                            if (inBounds(row + i, col + j)):
-                                visitSquare(row + i, col + j)
-
-        # Extra Rows and Cols
-        # This occurs if the height and width are not divisible by 3
-
-        if (numBombs != maxNumBombs):
-            # Extra rows
             
-            if (height % 3 == 1):
-                
-                mod = height % 3
-                for col in range (1, width, 3):
-                    row = height - 2
-                    visitSquare(height - 2, col)
-                    coords = [(row + i, col + j)
-                        for i in range(-1, 2) for j in range(-1, 2)]
-                    bombsInArea = 0
-                    while (bombsInArea != visibleBoard[row, col] and visibleBoard[row][col] != 9):
-                        # print('here')
-                        random.shuffle(coords)
-                        visit = coords.pop()
-                        if (inBounds(visit[0],visit[1])):
-                            visitSquare(visit[0], visit[1])
-                            if (visibleBoard[visit[0]][visit[1]] == 9):
-                                bombsInArea += 1
-                    if (visibleBoard[row][col] == 9):
-                        for i in range(-1, 2):
-                            for j in range(-1, 2):
-                                if (inBounds(row + i, col + j)):
-                                    visitSquare(row + i, col + j)
 
-        if (numBombs != maxNumBombs):
-            # Extra cols
-            
-            if (width % 3 == 1):
-                
-                mod = width % 3
-                for row in range (1, height, 3):
-                    col = width - 2
+            visitSquare(int(safeSquare.split(",")[0]), int(safeSquare.split(",")[1]))
+
+            for row in range(1, height, 3):
+                for col in range(1, width, 3):
                     visitSquare(row, col)
-                    coords = [(row + i, col + j)
-                        for i in range(-1, 2) for j in range(-1, 2)]
                     bombsInArea = 0
+
+                    # Get list of adjacent 8 squares
+                    coords = [(row + i, col + j)
+                            for i in range(-1, 2) for j in range(-1, 2)]
+                    # print(coords)
+
+                    # While not all bombs in our sector have been uncovered
+                    # randomly choosean adjacent square until we have the right number of bombs
                     while (bombsInArea != visibleBoard[row, col] and visibleBoard[row][col] != 9):
-                        # print('here')
                         random.shuffle(coords)
                         visit = coords.pop()
                         if (inBounds(visit[0],visit[1])):
                             visitSquare(visit[0], visit[1])
                             if (visibleBoard[visit[0]][visit[1]] == 9):
                                 bombsInArea += 1
+
+                    # If the middle square is a bomb, we must unfortunately mine out all
+                    # adjacent 8 squares as we do not know enough data
                     if (visibleBoard[row][col] == 9):
                         for i in range(-1, 2):
                             for j in range(-1, 2):
                                 if (inBounds(row + i, col + j)):
                                     visitSquare(row + i, col + j)
 
-        # Last edge case, sometimes the bottom right square never gets checked:
+            # Extra Rows and Cols
+            # This occurs if the height and width are not divisible by 3
 
-        if (numBombs != maxNumBombs):
-            visitSquare(height-1, width-1)
+            if (numBombs != maxNumBombs):
+                # Extra rows
+                
+                if (height % 3 == 1):
+                    
+                    mod = height % 3
+                    for col in range (1, width, 3):
+                        row = height - 2
+                        visitSquare(height - 2, col)
+                        coords = [(row + i, col + j)
+                            for i in range(-1, 2) for j in range(-1, 2)]
+                        bombsInArea = 0
+                        while (bombsInArea != visibleBoard[row, col] and visibleBoard[row][col] != 9):
+                            # print('here')
+                            random.shuffle(coords)
+                            visit = coords.pop()
+                            if (inBounds(visit[0],visit[1])):
+                                visitSquare(visit[0], visit[1])
+                                if (visibleBoard[visit[0]][visit[1]] == 9):
+                                    bombsInArea += 1
+                        if (visibleBoard[row][col] == 9):
+                            for i in range(-1, 2):
+                                for j in range(-1, 2):
+                                    if (inBounds(row + i, col + j)):
+                                        visitSquare(row + i, col + j)
+
+            if (numBombs != maxNumBombs):
+                # Extra cols
+                
+                if (width % 3 == 1):
+                    
+                    mod = width % 3
+                    for row in range (1, height, 3):
+                        col = width - 2
+                        visitSquare(row, col)
+                        coords = [(row + i, col + j)
+                            for i in range(-1, 2) for j in range(-1, 2)]
+                        bombsInArea = 0
+                        while (bombsInArea != visibleBoard[row, col] and visibleBoard[row][col] != 9):
+                            # print('here')
+                            random.shuffle(coords)
+                            visit = coords.pop()
+                            if (inBounds(visit[0],visit[1])):
+                                visitSquare(visit[0], visit[1])
+                                if (visibleBoard[visit[0]][visit[1]] == 9):
+                                    bombsInArea += 1
+                        if (visibleBoard[row][col] == 9):
+                            for i in range(-1, 2):
+                                for j in range(-1, 2):
+                                    if (inBounds(row + i, col + j)):
+                                        visitSquare(row + i, col + j)
+
+            # Last edge case, sometimes the bottom right square never gets checked:
+
+            if (numBombs != maxNumBombs):
+                visitSquare(height-1, width-1)
 
         # print(str(numBombs) + " vs " + str(maxNumBombs))
         runtime = int((time.time() - start) * 10000)
 
+        mined = mined/5.0
+        numBombs = numBombs/5.0
+
+
+        # Harsha do not touch outside these print statements
 
         print('runtime vs gridArea: '  + str(float(runtime/100.0)) + ' seconds vs ' + str(height*width) + ' squares' )
         
@@ -160,6 +167,9 @@ for filename in os.listdir(path):
         print('performance vs gridArea: '  + str(mined) + ' squares vs ' + str(height*width) + ' squares' )
         
         print('performance vs bombDensity: '  + str(mined) + ' squares vs ' + str(float(numBombs)/ (height*width)) + ' bombs/square' )
+            
+
+
         
         stats_total += height*width 
         stats_mined += mined
