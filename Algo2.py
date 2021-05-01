@@ -6,6 +6,7 @@ import os
 import random
 import sys
 import time 
+import glob
 def inBounds(i, j):
     return (i >= 0 and j >= 0 and i < height and j < width)
 
@@ -27,12 +28,13 @@ stats_bombs = 0
 stats_boards = 0
 path = '/Users/armaanlala/Developer/Minesweeper-Algorithms/varied_size_boards'
 
-for filename in os.listdir(path):
+for filename in glob.glob('./**/**'):
     
     if filename.endswith(".json"): 
+        print(filename)
         start = time.time()
 
-        initial = json.loads(open("varied_size_boards/" + filename).read())
+        initial = json.loads(open(filename).read())
 
                 
                 

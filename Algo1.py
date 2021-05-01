@@ -4,6 +4,7 @@ import numpy as np
 from numpy import unravel_index
 import os
 import time
+import glob
 
 
 def visitSquare(row: int,  col: int):
@@ -46,12 +47,12 @@ stats_bombs = 0
 stats_boards = 0
 path = '/Users/armaanlala/Developer/Minesweeper-Algorithms/varied_size_boards'
 
-for filename in os.listdir(path):
+for filename in glob.glob('./**/**'):
     
     if filename.endswith(".json"): 
         start = time.time()
 
-        initial = json.loads(open("varied_size_boards/" + filename).read())
+        initial = json.loads(open(filename).read())
 
         
         
