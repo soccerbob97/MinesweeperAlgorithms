@@ -9,8 +9,7 @@ Files Submitted
 - Algo1.py - This is our algorithm that uses probability to find the best location to look
 - Algo2.py - This is our algorithm that uses a reduced minimum constraint idea to find the best spot to dig
 - Data folder - This contains all of our captured data that we used for our analysis pdf
-- Varied Density Boards Folder - This folder contains all the density test cases given for us to use
-- Varied Size Boards Folder - This folder contains all the size test cases given for us to use
+- Json Boards Folder - This folder contains all the test cases that we wish to run
 - .gitignore - A basic gitignore file used for our version control
 - README.txt - A text file containing an overview of the project
 - algorithm.pdf - A pdf containing our analysis of Algo1 and Algo2
