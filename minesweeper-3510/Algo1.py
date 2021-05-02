@@ -111,6 +111,7 @@ for filename in glob.glob(path + '/**', recursive=True):
         runtime = int((time.time() - start) * 10000)
 
         # Print usefull statistics of our specific iteration
+        print(visibleBoard)
         print('Grid Area: ' + str(height*width) + ' squares')
         print('Bomb Density: ' + str(float(numBombs) /
               (height*width)) + ' bombs/square')

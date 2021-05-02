@@ -1,4 +1,4 @@
-# Minesweeper Algorithms
+Minesweeper Algorithms
 
 Group Members:
 - Armaan Lala alala6@gatech.edu
@@ -24,10 +24,8 @@ ArmaanLala-HarshaKaranth-KevinSadi.zip
     | -- Algo1.py
     | -- data/
         | -- All stats computed by both algorithms
-    | -- varied_density_boards/
-        | -- All varied density test boards
-    | -- varied_size_boards/
-        | -- All varied size test boards    
+    | -- json_board/
+        | -- All varied test boards to be ran
 | -- .gitignore
 | -- README.txt
 | -- algorithm.pdf
@@ -35,3 +33,25 @@ ArmaanLala-HarshaKaranth-KevinSadi.zip
 
 
 How to Run:
+Both algorithms will run ALL .json files that is in the same level directory or in any subfolders in relation to the python files. For this reason, we have one folder labeled 'json_boards/'. If you wish to test the output of any specific json files, please place them in this folder and delete any json files that you do not want to be run. 
+
+We do use external python packages so here are all the import statements we have
+import json
+import math
+import numpy as np
+from numpy import unravel_index
+import os
+import random
+import sys
+import time
+import glob
+
+numpy is probably the only external library that needs to be installed and this can be done either by using `pip3 numpy` or `pip numpy`.
+
+In order to run each one of the algoritms, make sure you are within the minesweeper-3510 folder and run `python3 Algo1.py` or `python3 Algo1.py`. If your system does not support `python3`, then simply type in python.
+
+
+Bugs/Limitations:
+
+At this moment, using all the test cases provided to us, we do not know of any bugs that occur within our code. 
+The only limitation deals with the fact that we must run every single .json file every time instead of being able to test one board at a time.
