@@ -51,6 +51,8 @@ numpy is probably the only external library that needs to be installed and this 
 
 In order to run each one of the algoritms, make sure you are within the minesweeper-3510 folder and run `python3 Algo1.py` or `python3 Algo1.py`. If your system does not support `python3`, then simply type in python.
 
+In the output, we print out the final board and a '-1' corresponds to an unmined tile
+
 
 
 
