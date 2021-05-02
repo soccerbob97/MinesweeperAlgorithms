@@ -16,6 +16,7 @@ Files Submitted
 
 
 
+
 Desired File Structure: (In case the submission messes with structure)
 ArmaanLala-HarshaKaranth-KevinSadi.zip
 | --minesweeper-3510/
@@ -28,6 +29,7 @@ ArmaanLala-HarshaKaranth-KevinSadi.zip
 | -- .gitignore
 | -- README.txt
 | -- algorithm.pdf
+
 
 
 
@@ -48,6 +50,8 @@ import glob
 numpy is probably the only external library that needs to be installed and this can be done either by using `pip3 numpy` or `pip numpy`.
 
 In order to run each one of the algoritms, make sure you are within the minesweeper-3510 folder and run `python3 Algo1.py` or `python3 Algo1.py`. If your system does not support `python3`, then simply type in python.
+
+
 
 
 Bugs/Limitations:
