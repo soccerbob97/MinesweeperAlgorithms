@@ -34,7 +34,7 @@ stats_boards = 0
 
 # Find every single json file
 path = os.path.dirname(os.path.abspath(__file__))
-for filename in glob.glob(path + '/**/**'):
+for filename in glob.glob(path + '/**', recursive=True):
 
     if filename.endswith(".json"):
         # Return list of bomb locations

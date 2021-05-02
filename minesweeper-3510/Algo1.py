@@ -48,7 +48,7 @@ stats_bombs = 0
 stats_boards = 0
 
 path = os.path.dirname(os.path.abspath(__file__))
-for filename in glob.glob(path + '/**/**'):
+for filename in glob.glob(path + '/**', recursive=True):
 
     if filename.endswith(".json"):
         bombCoord = []
