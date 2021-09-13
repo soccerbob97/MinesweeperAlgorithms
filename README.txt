@@ -1,4 +1,4 @@
-Minesweeper Algorithms: We created two algorithms that can flag the most bombs without mining them. The first algorithm follows a greedy approach using probabilities and labels, and the second algorithm follows a divide and conquer approach. 
+Minesweeper Algorithms: We created two algorithms that can flag the most bombs without mining them. The first algorithm follows a greedy approach using probabilities and labels, and the second algorithm follows a divide and conquer approach. Read Algorithm.pdf for a more detailed explanation and results. 
 
 Group Members:
 - Armaan Lala alala6@gatech.edu
